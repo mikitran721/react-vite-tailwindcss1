@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        barLow:['"Barlow Condensed"','tahoma'],
+      },
+      colors:{
+        primary:'#14605B',
+      }
+    },
   },
   plugins: [],
 }
