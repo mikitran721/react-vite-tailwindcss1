@@ -1,21 +1,24 @@
 @tailwind base;
-@tailwind components;
 
 @layer base {
   body {
     @apply font-barLow text-primary;
   }
 
-  /* h1-h6 bi xoa het -> tu build */
-
+  h1 {
+    @apply font-bold;
+  } /*
   h4 {
     @apply text-2xl;
   }
 
   h3 {
     @apply text-3xl;
-  }
+  } */
 }
+
+@tailwind components;
+
 @layer components {
   .btn {
     @apply border-2
@@ -27,6 +30,13 @@
     text-xl
     font-semibold
     cursor-pointer
+    hover:bg-primary hover:text-white
     mr-2;
   }
+  .card {
+    @apply overflow-hidden bg-primary shadow-md rounded-md shadow-primary relative hover:shadow-lg hover:shadow-primary;
+  }
+}
+.badge {
+  @apply flex justify-between items-center bg-cyan-50 rounded-md absolute top-2 left-2 min-w-[20%];
 }

@@ -1,6 +1,8 @@
 import "./App.css";
 import AuthButtons from "./components/AuthButtons";
+import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Trending from "./components/Trending";
 
 function App() {
   return (
@@ -9,14 +11,8 @@ function App() {
         <Nav />
         <main className="px-12 py-6 col-span-4 bg-cyan-50">
           <AuthButtons />
-          MAIN CONTENT Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Repudiandae obcaecati incidunt eum tempora perspiciatis quis quaerat
-          odit laboriosam voluptatem, itaque, temporibus molestiae, fugiat
-          distinctio non natus hic dignissimos eveniet? Pariatur? Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          exercitationem sunt amet similique minus rem provident aliquam
-          perspiciatis dolorum cupiditate, rerum magni qui eius quo odit est
-          possimus pariatur eum.
+          <Header />
+          <Trending />
         </main>
       </div>
     </>
